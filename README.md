@@ -15,11 +15,14 @@ cpp_project_template - A template for C++ projects.
 
 ```
 git clone --recursive https://github.com/marleeeeeey/cpp_project_template.git
+cd cpp_project_template
+git submodule update --init --recursive
 ```
 
 ### Build, run and debug via VSCode tasks (Windows)
 
 - Open the project folder in VSCode.
+- Run task: `(Windows) 02. Git submodule update`.
 - Run task: `(Windows) 03. Install vcpkg as subfolder`.
 - Run task: `(Windows) 30. + Run`.
 - For debugging press `F5`.
@@ -35,7 +38,6 @@ This project define it's dependences:
 First, we bootstrap a project-specific installation of vcpkg ("manifest mode") in the default location, `<project root>/vcpkg`. From the project root, run these commands:
 
 ```
-cd cpp_project_template
 git clone https://github.com/microsoft/vcpkg
 .\vcpkg\bootstrap-vcpkg.bat
 ```

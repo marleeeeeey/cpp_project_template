@@ -12,6 +12,11 @@
       "command": "rmdir /s /q build",
     },
     {
+      "label": "(Windows) 02. Git submodule update",
+      "type": "shell",
+      "command": "git submodule update --init --recursive"
+    },
+    {
       "label": "(Windows) 03. Install vcpkg as subfolder",
       "type": "shell",
       "command": "git clone https://github.com/microsoft/vcpkg && .\\vcpkg\\bootstrap-vcpkg.bat && .\\vcpkg\\vcpkg install --triplet=x64-windows"
