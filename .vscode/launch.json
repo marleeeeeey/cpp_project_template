@@ -6,7 +6,8 @@
       "request": "launch",
       "name": "Debug cpp_project_template",
       "program": "build/cpp_project_template.exe",
-      "args": []
+      "args": [],
+      "preLaunchTask": "(Win) 20. + Build"
     }
   ]
 }
